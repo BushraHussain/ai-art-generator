@@ -13,7 +13,7 @@ This project utilizes Stable Diffusion to generate unique AI-generated artwork b
 1. Clone the repository:
 
 ```bash 
-git clone https://github.com/your-repo-name/ai-art-generator.git
+git clone https://github.com/BushraHussain/ai-art-generator.git
 cd ai-art-generator
 ```
 
