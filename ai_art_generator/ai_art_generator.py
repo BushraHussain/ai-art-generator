@@ -1,5 +1,4 @@
 # Run on Google colab
-
 from diffusers import StableDiffusionPipeline
 import torch
 
@@ -9,8 +8,11 @@ pipe = StableDiffusionPipeline.from_pretrained(
     torch_dtype=torch.float16  # Using float16 for GPU optimization
 )
 
-# Move the model to GPU
+# Move the model to GPU if you are using google colab
 pipe.to("cuda")
+
+# Move model to CPU explicitly if using local system 
+# pipe.to("cpu")
 
 # Example text prompt
 prompt = "A futuristic lexus LC500 in the style of Eagle eye on the mars"
